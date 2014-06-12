@@ -56,6 +56,7 @@ if($mySurvey->isValid)
     echo $mySurvey->Description . "<br />";
     $mySurvey->showQuestions();
     responseList($myID);
+    echo '<br /><a href="survey_take.php?SurveyID=' . $myID . '">Take Survey Again!</a>';
 }else{
     echo "Sorry, no such survey!";    
 }
